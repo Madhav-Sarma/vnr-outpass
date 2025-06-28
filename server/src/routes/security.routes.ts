@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import { scanQRCode } from '../controllers/security.controller';
 import { requireRole } from '../middlewares/auth.middleware';
-
 const router = Router();
 // in security.routes.ts
 router.post('/scan-test', (req, res) => {
